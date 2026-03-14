@@ -1,0 +1,39 @@
+# robots.txt – Jolly Good Chef
+# https://jollygoodchef.com/robots.txt
+
+User-agent: *
+
+# Allow public-facing pages
+Allow: /
+Allow: /index.html
+Allow: /assets/
+
+# Disallow admin, config, private app areas
+Disallow: /app/admin/
+Disallow: /app/config/
+Disallow: /app/cron/
+Disallow: /app/actions/
+Disallow: /app/services/
+Disallow: /app/index.php?page=admin
+Disallow: /app/index.php?page=settings
+Disallow: /app/index.php?page=email-preferences
+
+# Disallow internal/utility paths
+Disallow: /tmp/
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.env$
+
+# Allow Googlebot specifically for all public content
+User-agent: Googlebot
+Allow: /
+
+# Allow Bingbot
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay for general bots (seconds)
+Crawl-delay: 10
+
+# XML Sitemap
+Sitemap: https://jollygoodchef.com/sitemap.xml
