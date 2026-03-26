@@ -1,0 +1,19 @@
+# Sensitive configuration
+config/db.php
+.env
+.env.local
+
+# System files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Logs
+*.log
+error.log
+
+# Temp files
+/tmp/
+/temp/
+*.tmp
